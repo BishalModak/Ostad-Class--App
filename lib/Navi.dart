@@ -1,3 +1,4 @@
+import 'package:fluter_basic/Module-11/class-1/lifecycle.dart';
 import 'package:fluter_basic/Module_9_Class-3.dart';
 import 'package:flutter/material.dart';
 import 'package:fluter_basic/GridView.dart';
@@ -128,6 +129,19 @@ class Navi extends StatelessWidget {
                       );
                     },
                     child: const Text("App drawer"),
+                  ),
+                ),
+
+                SizedBox(
+                  width: buttonWidth,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => lifecycle()),
+                      );
+                    },
+                    child: const Text("Life Cycle"),
                   ),
                 ),
 
