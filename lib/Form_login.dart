@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     Text('Phone Number'),
                     TextFormField(
-                      controller: phoneController,
+                      controller: phoneController, //it is controller
                       style: TextStyle(color: Colors.black),
                       decoration: InputDecoration(
                         hintText: 'Phone Number',
