@@ -1,13 +1,15 @@
-import 'package:fluter_basic/Module-11/class-1/lifecycle.dart';
-import 'package:fluter_basic/Module_9_Class-3.dart';
-import 'package:flutter/material.dart';
 import 'package:fluter_basic/GridView.dart';
+import 'package:fluter_basic/Module-11/class-1/lifecycle.dart';
+import 'package:fluter_basic/Module-11/class-2/calculator.dart';
+import 'package:fluter_basic/Module_9_Class-3.dart';
 import 'package:fluter_basic/class-1.dart';
 import 'package:fluter_basic/listView.dart';
 import 'package:fluter_basic/mediaQuery.dart';
 import 'package:fluter_basic/module-9_todo.dart';
 import 'package:fluter_basic/stateful_Classs.dart';
-import 'package:fluter_basic/Module-11/class-2/calculator.dart';
+import 'package:fluter_basic/waterTracker.dart';
+import 'package:flutter/material.dart';
+
 import 'module_9_class-2.dart';
 
 class Navi extends StatelessWidget {
@@ -156,6 +158,19 @@ class Navi extends StatelessWidget {
                       );
                     },
                     child: const Text("Calculator"),
+                  ),
+                ),
+
+                SizedBox(
+                  width: buttonWidth,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => waterTracker()),
+                      );
+                    },
+                    child: const Text("Water Tracker"),
                   ),
                 ),
 
