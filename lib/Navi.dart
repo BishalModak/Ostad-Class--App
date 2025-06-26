@@ -13,6 +13,7 @@ import 'package:fluter_basic/waterTracker.dart';
 import 'package:flutter/material.dart';
 
 import 'module-12/expenseTracker.dart';
+import 'module-14/UI_Design.dart';
 import 'module_9_class-2.dart';
 
 class Navi extends StatelessWidget {
@@ -215,6 +216,20 @@ class Navi extends StatelessWidget {
                       );
                     },
                     child: const Text("Rest API"),
+                  ),
+                ),
+
+                SizedBox(
+                  width: buttonWidth,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => UiDesign()),
+                      );
+                    },
+                    child: const Text("UI Design"),
                   ),
                 ),
 
