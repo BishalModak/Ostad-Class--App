@@ -7,6 +7,7 @@ import 'package:fluter_basic/listView.dart';
 import 'package:fluter_basic/mediaQuery.dart';
 import 'package:fluter_basic/module-9_todo.dart';
 import 'package:fluter_basic/stateful_Classs.dart';
+import 'package:fluter_basic/todoList.dart';
 import 'package:fluter_basic/waterTracker.dart';
 import 'package:flutter/material.dart';
 
@@ -186,6 +187,20 @@ class Navi extends StatelessWidget {
                       );
                     },
                     child: const Text("Expense Tracker"),
+                  ),
+                ),
+
+                SizedBox(
+                  width: buttonWidth,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => todoList()),
+                      );
+                    },
+                    child: const Text("Todo App with Functionality"),
                   ),
                 ),
 
