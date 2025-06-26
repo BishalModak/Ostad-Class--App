@@ -5,9 +5,10 @@ import 'package:fluter_basic/Module_9_Class-3.dart';
 import 'package:fluter_basic/class-1.dart';
 import 'package:fluter_basic/listView.dart';
 import 'package:fluter_basic/mediaQuery.dart';
+import 'package:fluter_basic/module-12/restAPI.dart';
+import 'package:fluter_basic/module-12/todoList.dart';
 import 'package:fluter_basic/module-9_todo.dart';
 import 'package:fluter_basic/stateful_Classs.dart';
-import 'package:fluter_basic/todoList.dart';
 import 'package:fluter_basic/waterTracker.dart';
 import 'package:flutter/material.dart';
 
@@ -201,6 +202,19 @@ class Navi extends StatelessWidget {
                       );
                     },
                     child: const Text("Todo App with Functionality"),
+                  ),
+                ),
+                SizedBox(
+                  width: buttonWidth,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => restAPI()),
+                      );
+                    },
+                    child: const Text("Rest API"),
                   ),
                 ),
 
